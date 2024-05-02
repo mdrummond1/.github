@@ -2,13 +2,22 @@ name: 🐛Bug Report
 description: File a bug report here
 title: "[BUG]: "
 labels: ["bug"]
-assignees: ["AnishDe12020"]
+assignees: ["mdrummond1"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report 🤗
         Make sure there aren't any open/closed issues for this topic 😃
+ 
+ - type: checkboxes
+    id: new-bug
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
         
   - type: textarea
     id: bug-description
@@ -30,6 +39,22 @@ body:
         4. See error
     validations:
       required: true
+      
+ - type: dropdown
+    id: versions
+    attributes:
+      label: Which version of the app are you using?
+      description: If this issue is occurring on more than 1 version of the app, select the appropriate versions.
+      multiple: true
+      options:
+       - 1.0.0
+       - 1.1.0
+       - 1.2.0
+       - 2.0.0
+       - 2.1.0
+    validations:
+      required: true
+      
   - type: textarea
     id: additional-information
     attributes:
