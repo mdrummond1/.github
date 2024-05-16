@@ -20,15 +20,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    attributes:
-      label: Reporting Option
-      options:
-        - Direct Report (Preferred)
-        - Anonymous Report
-    validations:
-      required: true
-
   - type: textarea
     attributes:
       label: Contact Information (Optional)
