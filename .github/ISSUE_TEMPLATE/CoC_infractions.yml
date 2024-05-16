@@ -1,5 +1,7 @@
 name: Code of Conduct Infraction Report
 description: To describe an abuse of community guidelines
+assignees: ["mdrummond1"]
+labels: ["CoC infraction"]
 body:
   - type: markdown
     attributes:
@@ -10,13 +12,13 @@ body:
         * When did it happen?
         * Who was involved (if known)?
         * Are there any screenshots or other evidence you can share?
-    validations:
-      required: true
-      
+          
   - type: textarea
     attributes:
       label: Desired Outcome
       placeholder: What would you like to see happen as a result of this report?
+    validations:
+      required: true
 
   - type: dropdown
     attributes:
@@ -24,7 +26,6 @@ body:
       options:
         - Direct Report (Preferred)
         - Anonymous Report
-      placeholder: How would you like to report this incident?
     validations:
       required: true
 
