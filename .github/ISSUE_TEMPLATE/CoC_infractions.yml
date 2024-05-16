@@ -9,8 +9,8 @@ body:
         * When did it happen?
         * Who was involved (if known)?
         * Are there any screenshots or other evidence you can share?
-    #validations:
-    #  required: true
+    validations:
+      required: true
       
   - type: textarea
     attributes:
@@ -23,9 +23,9 @@ body:
       options:
         - Direct Report (Preferred)
         - Anonymous Report
-      placeholder: How would you like to report this incident?
-      validations:
-        required: true
+    placeholder: How would you like to report this incident?
+    validations:
+      required: true
 
   - type: conditional
     if:
@@ -37,9 +37,9 @@ body:
         attributes:
           label: Contact Information (Optional)
           description: If you feel comfortable providing contact information, it may help expedite the resolution process.
-          placeholder: Email address or other preferred method of contact
+        placeholder: Email address or other preferred method of contact
 
   - type: textarea
     attributes:
       label: Additional Information
-      placeholder: Is there anything else you would like to share?
+    placeholder: Is there anything else you would like to share?
