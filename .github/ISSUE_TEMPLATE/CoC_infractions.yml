@@ -4,13 +4,13 @@ body:
     attributes:
       value: |
         **Please describe the incident in detail.**
-
+        
         * What happened?
         * When did it happen?
         * Who was involved (if known)?
         * Are there any screenshots or other evidence you can share?
-    validations:
-      required: true
+    #validations:
+    #  required: true
       
   - type: textarea
     attributes:
