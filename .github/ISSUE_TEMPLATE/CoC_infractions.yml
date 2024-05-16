@@ -28,10 +28,10 @@ body:
       required: true
 
   - type: textarea
-      attributes:
-        label: Contact Information (Optional)
-        description: If you feel comfortable providing contact information, it may help expedite the resolution process.
-      placeholder: Email address or other preferred method of contact
+    attributes:
+      label: Contact Information (Optional)
+    description: If you feel comfortable providing contact information, it may help expedite the resolution process.
+    placeholder: Email address or other preferred method of contact
 
   - type: textarea
     attributes:
