@@ -1,0 +1,43 @@
+title: Code of Conduct Infraction Report
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        **Please describe the incident in detail.**
+
+        * What happened?
+        * When did it happen?
+        * Who was involved (if known)?
+        * Are there any screenshots or other evidence you can share?
+
+  - type: textarea
+    attributes:
+      label: Desired Outcome
+      placeholder: What would you like to see happen as a result of this report?
+
+  - type: select
+    attributes:
+      label: Reporting Option
+      options:
+        - Direct Report (Preferred)
+        - Anonymous Report
+      placeholder: How would you like to report this incident?
+
+  - type: conditional
+    if:
+      field: reporting_option
+      operator: eq
+      value: 'Direct Report (Preferred)'
+    then:
+      - type: textarea
+        attributes:
+          label: Contact Information (Optional)
+          description: If you feel comfortable providing contact information, it may help expedite the resolution process.
+          placeholder: Email address or other preferred method of contact
+
+  - type: textarea
+    attributes:
+      label: Additional Information
+      placeholder: Is there anything else you would like to share?
